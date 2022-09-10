@@ -1,0 +1,20 @@
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+h1{
+    text-align: center;
+}
+
+.negro{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.rojo{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}

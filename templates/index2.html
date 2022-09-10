@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/tablero.css') }}">
+    <title>TABLERO DE AJEDREZ</title>
+</head>
+<body>
+    <h1>Checker Board</h1>
+
+    <table>
+        <tbody class="tabla">
+            {% for i in range(num1) %}
+                <tr>
+                    {% for x in range(num2): %}
+                        <td class="negro"></td>
+                        <td class="rojo"></td>
+                    {%endfor%}
+                </tr>
+                <tr>
+                    {% for x in range(num2): %}
+                        <td class="rojo"></td>
+                        <td class="negro"></td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+
+</body>
+</html>
